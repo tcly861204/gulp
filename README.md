@@ -1,3 +1,13 @@
+```
+npm install -g gulp-concat 文件打包
+npm install -g gulp-rename 文件重命名
+npm install -g gulp-imagemin 图片压缩
+npm install -g gulp-jslint js代码校验 慎用
+npm install -g gulp-minify-css css压缩
+npm install -g gulp-minify-html html压缩
+npm install -g gulp-uglify js压缩
+```
+
 # 入门指南
 1. 全局安装 gulp：
 ```javascript

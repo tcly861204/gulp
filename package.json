@@ -1,0 +1,22 @@
+{
+  "name": "gulpStuday",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/tcly861204/gulp.git",
+  "author": "tcly861204 <tcly861204@hotmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "autoprefixer": "^7.2.5",
+    "cssnext": "^1.8.4",
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.4.0",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-less": "^3.4.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-postcss": "^7.0.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-stylus": "^2.7.0",
+    "precss": "^3.1.0"
+  }
+}
