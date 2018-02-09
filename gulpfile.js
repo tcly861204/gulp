@@ -17,6 +17,7 @@ const rev = require('gulp-rev-append');
 const gulpRev = require('gulp-rev');
 const revCollector = require('gulp-rev-collector');
 const babel = require("gulp-babel");
+const concat = require('gulp-concat');
 
 const zip = require('gulp-zip');
 const gulpCongfig = {
@@ -144,6 +145,14 @@ gulp.task('serve', function() {
             directory: true
         }
     });
+});
+
+/*js,css压缩*/
+gulp.task('concatJs', function(){
+    //gulp.src('src/js/*.js')//这种方式合并文件的先后顺序不能控制
+    gulp.src(['src/js/js1.js','src/js/js2.js']) //按顺序将文件写入数组，做为参数
+    .pipe(concat('all.js')) //合并后生成的文件
+    .pipe(gulp.dest('build/js'))
 });
 
 
