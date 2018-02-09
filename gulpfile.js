@@ -16,6 +16,7 @@ const htmlmin = require('gulp-htmlmin');
 const rev = require('gulp-rev-append');
 const gulpRev = require('gulp-rev');
 const revCollector = require('gulp-rev-collector');
+const babel = require("gulp-babel");
 
 const zip = require('gulp-zip');
 const gulpCongfig = {
@@ -159,6 +160,7 @@ gulp.task('packageProject',function(){
 /*压缩js*/
 gulp.task('jsmin',function (cb) {
     return gulp.src("src/*/*.js")
+        .pipe(babel())
         .pipe(uglify({
             mangle: true, //类型：Boolean 默认：true 是否修改变量名
             compress: true  //类型：Boolean 默认：true 是否完全压缩

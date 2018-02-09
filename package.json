@@ -10,6 +10,7 @@
     "browser-sync": "^2.23.6",
     "cssnext": "^1.8.4",
     "gulp": "^3.9.1",
+    "gulp-babel": "^7.0.1",
     "gulp-clean": "^0.4.0",
     "gulp-htmlmin": "^4.0.0",
     "gulp-imagemin": "^4.1.0",

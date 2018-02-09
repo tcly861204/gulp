@@ -6,7 +6,17 @@ npm install -g gulp-jslint js代码校验 慎用
 npm install -g gulp-minify-css css压缩
 npm install -g gulp-minify-html html压缩
 npm install -g gulp-uglify js压缩
+
 ```
+# 使用babel编译es6需要安装以下插件包 配置.babelrc
+```
+"gulp-babel": "^7.0.0",
+"babel-core": "^6.26.0",
+"babel-polyfill": "^6.26.0",
+"babel-preset-stage-0": "^6.24.1",
+"babel-preset-es2015": "^6.24.1",
+```
+
 
 # 入门指南
 1. 全局安装 gulp：
