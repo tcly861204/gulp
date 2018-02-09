@@ -1,0 +1,1 @@
+!function(n){window.add=function(n,d){return n+d}}();
