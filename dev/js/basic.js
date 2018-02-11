@@ -1,1 +1,1 @@
-!function(n){window.add=function(n,d){return n+d}}();
+"use strict";!function(n){window.add=function(n,t){return n+t}}();

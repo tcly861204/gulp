@@ -18,7 +18,7 @@ const gulpRev = require('gulp-rev');
 const revCollector = require('gulp-rev-collector');
 const babel = require("gulp-babel");
 const concat = require('gulp-concat');
-
+const gulpLib = require('./gulp-lib/index.js');
 const zip = require('gulp-zip');
 const gulpCongfig = {
     point:3000,
@@ -26,6 +26,8 @@ const gulpCongfig = {
     dev:'./dev/',  //开发目录
     build:'./build/'  //构建目录
 }
+
+
 
 function toNum(num){
     if(num>9){
@@ -43,6 +45,13 @@ function timeFormat(){
            time.getMinutes()+'.'+
            time.getSeconds();
 }
+
+/*自定义库*/
+gulp.task('gulpLibs',function(){
+    gulp.src('dev/*/*.css')
+        .pipe(gulpLib())
+        .pipe(gulp.dest('./build/'));
+});
 
 /*less*/
 gulp.task('LessTask', function() {
