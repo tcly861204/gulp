@@ -1,9 +1,10 @@
 {
-  "name": "gulpStuday",
+  "name": "{{name}}",
   "version": "1.0.0",
+  "description": "{{description}}",
   "main": "index.js",
   "repository": "https://github.com/tcly861204/gulp.git",
-  "author": "tcly861204 <tcly861204@hotmail.com>",
+  "author": "{{author}}",
   "license": "MIT",
   "dependencies": {
     "autoprefixer": "^7.2.5",
